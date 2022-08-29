@@ -1,3 +1,5 @@
+add_subdirectory(custom_executor)
+
 add_executable(hello_async_await
 	hello_async_await.cpp
 )
