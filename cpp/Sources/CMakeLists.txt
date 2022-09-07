@@ -83,3 +83,9 @@ target_include_directories(promise_with_thread_pool PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}/../Externals/boost/utility/include
 )
 target_link_libraries(promise_with_thread_pool Threads::Threads)
+
+# multi thread pool
+add_executable(multi_thread_executor
+	multi_thread_executor.cpp
+)
+target_compile_features(multi_thread_executor PUBLIC cxx_std_20)
